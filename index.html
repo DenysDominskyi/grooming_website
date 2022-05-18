@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== STYLE ===============-->
+    <link rel="stylesheet" href="/style/style.css">
+
+    <!--=============== SWIPER CSS ===============-->
+
+    
+    <title>VikGrooming</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">VikGrooming</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#works" class="nav__link">Works</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <img src="/images/home(1).jpg" alt="" class="home__img">
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__data-subtitle">Welcome to VikGrooming</span>
+                    <h1 class="home__data-title">Professional <br> Dog Grooming </br> </h1>
+                    <a href="" class="button">Explore</a>
+                </div>
+
+
+                <div class="home__social">
+                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        <i class="ri-facebook-circle-fill"></i>
+                    </a>
+                    
+                    <a href="https://web.telegram.org" target="_blank" class="home__social-link">
+                        <i class="ri-telegram-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">More Information <br> About Me</h2>
+                    <p class="about__description">Lala lalala lalalla lal lalalalal lalalal,
+                        lalal lalalala lalalal lala. Lala laala lala lala, la, lala.
+                        La la la la lalal.
+                    </p>
+                    <a href="#contact" class="button">My contact</a>
+                </div>
+        
+                <div class="about__img">
+                    <div class="about__img-overlay">
+                        <img src="/images/about1.jpg" alt="" class="about__img-one">
+                    </div>
+        
+                    <div class="about__img-overlay">
+                        <img src="/images/about2.jpg" alt="" class="about__img-two">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== DISCOVER ====================-->
+        <section class="discover section" id="discover">
+            <h2 class="section__title">Discover the most <br> attractive places</h2>
+        
+            <div class="discover__container container swiper">
+                <div class="swiper-wrapper">
+                    <!--==================== DISCOVER 1 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <img src="images/discover1.jpg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">Bali</h2>
+                            <span class="discover__description">24 tours available</span>
+                        </div>
+                    </div>
+        
+                    <!--==================== DISCOVER 2 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <img src="images/discover2.jpg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">Hawaii</h2>
+                            <span class="discover__description">15 tours available</span>
+                        </div>
+                    </div>
+        
+                    <!--==================== DISCOVER 3 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <img src="images/discover3.jpg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">Hvar</h2>
+                            <span class="discover__description">18 tours available</span>
+                        </div>
+                    </div>
+        
+                    <!--==================== DISCOVER 4 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <img src="images/discover4.jpg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">Whitehaven</h2>
+                            <span class="discover__description">32 tours available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    
+    <!--==================== MAIN JS ====================-->
+    <script src="/js/script.js"></script>
+
+    <!--==================== SWIPER JS ====================-->
+
+</body>
+</html>

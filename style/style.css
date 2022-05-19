@@ -424,3 +424,8 @@ input {
 .discover__img:hover {
     transform: var(--img-scale);
 }
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right{
+    background-image: none;
+}

@@ -28,18 +28,27 @@
                         <a href="#home" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About Me</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#works" class="nav__link">Works</a>
+                        <a href="#about" class="nav__link">About</a>
                     </li>
                     <li class="nav__item">
                         <a href="#experience" class="nav__link">Experience</a>
                     </li>
                     <li class="nav__item">
+                        <a href="#works" class="nav__link">Works</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#prices" class="nav__link">Prices</a>
+                    </li>
+                    <li class="nav__item">
                         <a href="#contact" class="nav__link">Contact</a>
                     </li>
                 </ul>
+
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <span class="change-theme-name">Color mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
 
                 <i class="ri-close-line nav__close" id="nav-close"></i>
             </div>
@@ -53,7 +62,7 @@
     <main class="main">
         <!--==================== HOME ====================-->
         <section class="home" id="home">
-            <img src="/images/home(1).jpg" alt="" class="home__img">
+            <img src="/images/home1.jpg" alt="" class="home__img">
 
             <div class="home__container container grid">
                 <div class="home__data">
@@ -83,7 +92,7 @@
         <section class="about section" id="about">
             <div class="about__container container grid">
                 <div class="about__data">
-                    <h2 class="section__title about__title">More Information <br> About Me</h2>
+                    <h2 class="section__title about__title">About Me</h2>
                     <p class="about__description">Lala lalala lalalla lal lalalalal lalalal,
                         lalal lalalala lalalal lala. Lala laala lala lala, la, lala.
                         La la la la lalal.
@@ -104,7 +113,7 @@
         </section>
 
         <!--==================== EXPERIENCE ====================-->
-        <section class="discover section" id="works">
+        <section class="discover section" id="experience">
             <h2 class="section__title">With My Experience <br> I Will Serve You</h2>
 
             <div class="experience__content grid">
@@ -167,7 +176,7 @@
         </section>
 
         <!--==================== WORKS ====================-->
-        <section class="experience section">
+        <section class="experience section" id="works">
             <h2 class="section__title">Some of my <br>happy clients <br>before-after</h2>
         
             <div class="experience__container container grid">
@@ -206,9 +215,131 @@
             </div>
         </section>
 
+            <!--==================== PRICES ====================-->
+            <section class="place section" id="prices">
+                <h2 class="section__title">Make Your Choose</h2>
+            
+                <div class="place__container container grid">
+                    <!--==================== PLACES CARD 1 ====================-->
+                    <div class="place__card">
+                        <img src="/images/price1.jpg" alt="" class="place__img">
+            
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+            
+                            <div class="place__data">
+                                <h3 class="place__title">Trimming</h3>
+                                <span class="place__subtitle">Mellan</span>
+                                <span class="place__price">$249</span>
+                            </div>
+                        </div>
+            
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+            
+                    <!--==================== PLACES CARD 2 ====================-->
+                    <div class="place__card">
+                        <img src="/images/price2.jpg" alt="" class="place__img">
+            
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">5,0</span>
+                            </span>
+            
+                            <div class="place__data">
+                                <h3 class="place__title">Cutting</h3>
+                                <span class="place__subtitle">Mellan</span>
+                                <span class="place__price">$159</span>
+                            </div>
+                        </div>
+            
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+            
+                    <!--==================== PLACES CARD 3 ====================-->
+                    <div class="place__card">
+                        <img src="/images/price3.jpg" alt="" class="place__img">
+            
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,9</span>
+                            </span>
+            
+                            <div class="place__data">
+                                <h3 class="place__title">Bad</h3>
+                                <span class="place__subtitle">Mellan</span>
+                                <span class="place__price">$349</span>
+                            </div>
+                        </div>
+            
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+            
+                    <!--==================== PLACES CARD 4 ====================-->
+                    <div class="place__card">
+                        <img src="/images/price4.jpg" alt="" class="place__img">
+            
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+            
+                            <div class="place__data">
+                                <h3 class="place__title">Spa</h3>
+                                <span class="place__subtitle">Mellan</span>
+                                <span class="place__price">$249</span>
+                            </div>
+                        </div>
+            
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+            
+                    <!--==================== PLACES CARD 5 ====================-->
+                    <div class="place__card">
+                        <img src="/images/price5.jpg" alt="" class="place__img">
+            
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+            
+                            <div class="place__data">
+                                <h3 class="place__title">Puts</h3>
+                                <span class="place__subtitle">Mellan</span>
+                                <span class="place__price">$199</span>
+                            </div>
+                        </div>
+            
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
 
 
     </main>
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
     
     <!--==================== MAIN JS ====================-->
     <script src="/js/main.js"></script>

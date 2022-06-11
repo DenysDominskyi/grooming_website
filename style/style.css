@@ -23,7 +23,7 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-bar-cover-color: hsl(var(--hue-color), 64%, 18%);;
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
-
+    --footer-bcgr: #f890b9;
     --home-btn-color: hsl(204, 63%, 18%);
 
     --price-bckgr1: hsla(206, 29%, 48%, 0.8);
@@ -91,6 +91,7 @@ body.dark-theme {
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-bar-cover-color: hsl(var(--hue-color), 34%, 65%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+    --footer-bcgr: #853655;
 
     --home-btn-color: hsla(206, 23%, 94%, 0.2);
 
@@ -388,9 +389,6 @@ input {
 
 .home__data>a{
     max-width: max-content;
-    position: absolute;
-    bottom: 90px;
-    left: 0;
 }
 
 /* =================== BUTTONS =================== */
@@ -769,6 +767,8 @@ input {
     opacity: .9;
     z-index: var(--z-tooltip);
     transition: .4s;
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--white-color);
 }
 
 .scrollup:hover {
@@ -784,6 +784,65 @@ input {
 .scrollup:hover .scrollup__icon {
     color: #f890b9;
 }
+
+
+
+/*=============== FOOTER ===============*/
+.footer{
+    background-color: var(--first-color);
+    overflow-x: hidden;
+}
+.footer__container {
+    row-gap: 5rem;
+}
+
+.footer__content {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 2rem;
+}
+
+.footer__title,
+.footer__subtitle {
+    font-size: var(--h3-font-size);
+}
+
+.footer__title {
+    margin-bottom: var(--mb-0-5);
+}
+
+.footer__description {
+    margin-bottom: var(--mb-2);
+}
+
+.footer__social {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1-25);
+}
+.footer__social:hover{
+    color: var(--white-color);
+}
+
+.footer__subtitle {
+    margin-bottom: var(--mb-1);
+}
+
+.footer__item {
+    margin-bottom: var(--mb-0-75);
+}
+
+.footer__link {
+    color: var(--text-color);
+}
+
+.footer__link:hover {
+    color: #FFF;
+}
+
+/* _
+----------------------------------------------------------------------------_____--------------------------------------
+----------------------------------------------------------------------------_____--------------------------------------
+----------------------------------------------------------------------------_____-------------------------------------- */
 
 /* Show scroll */
 .show-scroll {
@@ -846,10 +905,6 @@ input {
         grid-template-columns: repeat(3, max-content);
     }
 }
-/* _
-----------------------------------------------------------------------------_____--------------------------------------
-----------------------------------------------------------------------------_____--------------------------------------
-----------------------------------------------------------------------------_____-------------------------------------- */
 @media screen and (min-width: 767px){
     body{
         margin: 0;
@@ -939,8 +994,7 @@ input {
     }
 
     .home__data>a{
-    bottom: 120px;
-    background-color: var(--home-btn-color);
+        background-color: var(--home-btn-color);
     }
     .home__data a:hover{
         background-color: var(--title-color) !important;
@@ -1047,6 +1101,9 @@ input {
     .price__card,
     .price__img{
         height: 263px;
+    }
+    .footer__content {
+        justify-items: center;
     }
 }
 

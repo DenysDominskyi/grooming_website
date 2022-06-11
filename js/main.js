@@ -100,6 +100,39 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
+
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2800,
+    // reset: true,
+})
+
+
+sr.reveal(`.home__data, .home__social-link, .home__info,
+           .discover__container,
+           .experience__data, .experience__overlay,
+           .price__card,
+           .footer__data`,{
+    origin: 'top',
+    interval: 100,
+})
+
+sr.reveal(`.about__data, 
+           .video__description,
+           .work__container`, {
+    origin: 'left',
+})
+
+sr.reveal(`.about__img-overlay, 
+           .video__content,
+           .home__img`, {
+    origin: 'right',
+    interval: 100,
+})
+
+
+
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'

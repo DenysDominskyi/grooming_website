@@ -520,13 +520,13 @@ input {
     margin-right: auto;
 }
 
-.experience__img {
+.work__img {
     position: relative;
     padding-bottom: 2rem;
 }
 /* =================== WORKS =================== */
 
-.experience__container {
+.work__container {
     row-gap: 2.5rem;
     justify-content: center;
     justify-items: center;
@@ -543,31 +543,31 @@ input {
     font-size: var(--small-font-size);
 }
 
-.experience__img {
+.work__img {
     position: relative;
     padding-bottom: 2rem;
 }
 
-.experience__img-one,
-.experience__img-two {
+.work__img-one,
+.work__img-two {
     transition: var(--img-transition);
 }
 
-.experience__img-one:hover,
-.experience__img-two:hover {
+.work__img-one:hover,
+.work__img-two:hover {
     transform: var(--img-scale);
 }
 
-.experience__overlay {
+.work__overlay {
     overflow: var(--img-hidden);
 }
 
-.experience__overlay:nth-child(1) {
+.work__overlay:nth-child(1) {
     width: 263px;
     margin-right: 2rem;
 }
 
-.experience__overlay:nth-child(2) {
+.work__overlay:nth-child(2) {
     width: 120px;
     position: absolute;
     top: 2rem;
@@ -675,36 +675,36 @@ input {
     font-size: 1.2rem;
 }
 
-/*=============== PLACES ===============*/
-.place__card,
-.place__img {
+/*=============== priceS ===============*/
+.price__card,
+.price__img {
     height: 230px;
 }
 
-.place__container {
+.price__container {
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
 }
 
-.place__card {
+.price__card {
     position: relative;
     overflow: var(--img-hidden);
 }
 
-.place__card:hover .place__img {
+.price__card:hover .price__img {
     transform: var(--img-scale);
 }
 
-.place__img {
+.price__img {
     transition: var(--img-transition);
 }
 
-.place__content,
-.place__title {
+.price__content,
+.price__title {
     color: #fff;
 }
 
-.place__content {
+.price__content {
     position: absolute;
     top: 0;
     left: 0;
@@ -716,22 +716,22 @@ input {
     padding: .75rem .75rem 0 1rem;
 }
 
-.place__rating {
+.price__rating {
     align-self: flex-end;
     display: flex;
     align-items: center;
 }
 
-.place__rating-icon {
+.price__rating-icon {
     font-size: .75rem;
     margin-right: var(--mb-0-25);
 }
 
-.place__rating-number {
+.price__rating-number {
     font-size: var(--small-font-size);
 }
 
-.place__data{
+.price__data{
     position: relative;
     left: -17px;
     background: var(--price-bckgr1);
@@ -741,16 +741,16 @@ input {
     border-radius: 0 5px 0 0 ;
 }
 
-.place__price {
+.price__price {
     display: block;
 }
 
-.place__title {
+.price__title {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-25);
 }
 
-.place__button {
+.price__button {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -808,7 +808,7 @@ input {
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
 @media screen and (max-width: 340px){
-    .place__container{
+    .price__container{
         grid-template-columns: max-content;
         justify-content: center;
     }
@@ -816,10 +816,10 @@ input {
     .experience__content{
         padding: 0;
     }
-    .experience__overlay:nth-child(1){
+    .work__overlay:nth-child(1){
         width: 190px;
     }
-    .experience__overlay:nth-child(2){
+    .work__overlay:nth-child(2){
         width: 80px;
     }
 
@@ -828,7 +828,7 @@ input {
         padding: 1rem;
     }
 
-    .experience__img,
+    .work__img,
     .video__container{
         padding: 0;
     }
@@ -842,7 +842,7 @@ input {
         justify-content: center;
     }
 
-    .place__container{
+    .price__container{
         grid-template-columns: repeat(3, max-content);
     }
 }
@@ -971,15 +971,15 @@ input {
     }
 
     /* .discover__container,
-    .place__container{
+    .price__container{
         padding-top: 2rem;
     } */
 
-    .experience__overlay:nth-child(1){
+    .work__overlay:nth-child(1){
         width: 363px;
         margin-right: 4rem;
     }
-    .experience__overlay:nth-child(2){
+    .work__overlay:nth-child(2){
         width: 160px;
     }
 }
@@ -1025,11 +1025,11 @@ input {
         margin: var(--mb-1) auto;
         column-gap: 3.5rem;
     }
-    .experience__overlay:nth-child(1){
+    .work__overlay:nth-child(1){
         width: 463px;
         margin-right: 7rem;
     }
-    .experience__overlay:nth-child(2){
+    .work__overlay:nth-child(2){
         width: 220px;
         top: 3rem;
     }
@@ -1041,11 +1041,11 @@ input {
         padding: 0 8rem;
     }
 
-    .place__container{
+    .price__container{
         gap: 3rem 2rem;
     }
-    .place__card,
-    .place__img{
+    .price__card,
+    .price__img{
         height: 263px;
     }
 }

@@ -67,7 +67,7 @@
 --img-scale: scale(1.1);
 }
 
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 968px){
     :root {
         --biggest-font-size: 4rem;
         --h1-font-size: 2.25rem;
@@ -80,7 +80,7 @@
 }
 
 /*========== Variables Dark theme ==========*/
-body.dark-theme {
+body.dark-theme{
     --first-color: hsl(var(--hue-color), 64%, 18%);
 
     --first-color-second: hsl(var(--hue-color), 54%, 12%);
@@ -104,7 +104,7 @@ body.dark-theme {
 }
 
 /*========== Button Dark/Light ==========*/
-.nav__dark {
+.nav__dark{
     display: flex;
     align-items: center;
     column-gap: 2rem;
@@ -114,87 +114,89 @@ body.dark-theme {
 }
 
 .change-theme,
-.change-theme-name {
+.change-theme-name{
     color: var(--title-color);
 }
 
-.change-theme {
+.change-theme{
     cursor: pointer;
     font-size: 1rem;
 }
 
-.change-theme-name {
+.change-theme-name{
     font-size: var(--small-font-size);
 }
 
 /* =================== BASE =================== */
 
-* {
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-html {
+html{
     scroll-behavior: smooth;
 }
 
-body {
+body{
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 h1,
 h2,
-h3 {
+h3{
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
     font-family: var(--title-font);
 }
 
-ul {
+ul{
     list-style: none;
 }
 
-a {
+a{
     text-decoration: none;
+    color: inherit;
 }
 
 img,
-video {
+video{
     max-width: 100%;
     height: auto;
 }
 
 button,
-input {
+input{
     border: none;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
 }
 
-button {
+button{
     cursor: pointer;
 }
 
-input {
+input{
     outline: none;
 }
 
-.main {
+.main{
     overflow-x: hidden;
 }
 
 /* =================== REUSABLE CSS CLASSES =================== */
 
-.section {
+.section{
     padding: 4.5rem 0 2.5rem;
 }
 
-.section__title {
+.section__title{
     font-size: var(--h2-font-size);
     color: var(--title-color);
     text-align: center;
@@ -202,13 +204,13 @@ input {
     margin-bottom: var(--mb-2);
 }
 
-.container {
+.container{
     max-width: 968px;
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
 }
 
-.grid {
+.grid{
     display: grid;
     gap: 1.5rem;
 }
@@ -299,24 +301,24 @@ input {
 }
 
 /* Change background header */
-.scroll-header {
+.scroll-header{
     background-color: var(--body-color);
     box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
 }
 
 .scroll-header .nav__logo,
-.scroll-header .nav__toggle {
+.scroll-header .nav__toggle{
     color: var(--title-color);
 }
 
 
 /* Active link */
-.active-link {
+.active-link{
     position: relative;
     color: #f890b9;
 }
 
-.active-link::before {
+.active-link::before{
     content: '';
     position: absolute;
     background-color: #f890b9;
@@ -422,55 +424,55 @@ input {
 }
 
 /* =================== ABOUT =================== */
-.about__data {
+.about__data{
     text-align: center;
 }
 
-.about__container {
+.about__container{
     row-gap: 2.5rem;
 }
 
-.about__description {
+.about__description{
     margin-bottom: var(--mb-2);
 }
 
-.about__img {
+.about__img{
     display: flex;
     column-gap: 1rem;
     align-items: center;
     justify-content: center;
 }
 
-.about__img-overlay {
+.about__img-overlay{
     overflow: var(--img-hidden);
 }
 
-.about__img-one {
+.about__img-one{
     width: 130px;
 }
 
-.about__img-two {
+.about__img-two{
     width: 180px;
 }
 
 .about__img-one,
-.about__img-two {
+.about__img-two{
     transition: var(--img-transition);
 }
 
 .about__img-one:hover,
-.about__img-two:hover {
+.about__img-two:hover{
     transform: var(--img-scale);
 }
 
 /* =================== EXPERIENCE =================== */
-.discover__card {
+.discover__card{
     position: relative;
     width: 200px;
     overflow: var(--img-hidden);
 }
 
-.discover__data {
+.discover__data{
     position: absolute;
     bottom: 1.5rem;
     left: 1rem;
@@ -480,25 +482,25 @@ input {
 }
 
 .discover__title,
-.discover__description {
+.discover__description{
     color: #fff;
 }
 
-.discover__title {
+.discover__title{
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-25);
 }
 
-.discover__description {
+.discover__description{
     display: block;
     font-size: var(--smaller-font-size);
 }
 
-.discover__img {
+.discover__img{
     transition: var(--img-transition);
 }
 
-.discover__img:hover {
+.discover__img:hover{
     transform: var(--img-scale);
 }
 
@@ -507,7 +509,7 @@ input {
     background-image: none;
 }
 
-.experience__content {
+.experience__content{
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1rem;
     justify-items: center;
@@ -518,54 +520,54 @@ input {
     margin-right: auto;
 }
 
-.work__img {
+.work__img{
     position: relative;
     padding-bottom: 2rem;
 }
 /* =================== WORKS =================== */
 
-.work__container {
+.work__container{
     row-gap: 2.5rem;
     justify-content: center;
     justify-items: center;
 }
 
 
-.experience__number {
+.experience__number{
     font-size: var(--h2-font-size);
     font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-0-5);
 }
 
-.experience__description {
+.experience__description{
     font-size: var(--small-font-size);
 }
 
-.work__img {
+.work__img{
     position: relative;
     padding-bottom: 2rem;
 }
 
 .work__img-one,
-.work__img-two {
+.work__img-two{
     transition: var(--img-transition);
 }
 
 .work__img-one:hover,
-.work__img-two:hover {
+.work__img-two:hover{
     transform: var(--img-scale);
 }
 
-.work__overlay {
+.work__overlay{
     overflow: var(--img-hidden);
 }
 
-.work__overlay:nth-child(1) {
+.work__overlay:nth-child(1){
     width: 263px;
     margin-right: 2rem;
 }
 
-.work__overlay:nth-child(2) {
+.work__overlay:nth-child(2){
     width: 120px;
     position: absolute;
     top: 2rem;
@@ -574,14 +576,14 @@ input {
 
 /*==================== SLIDER_BEFORE/AFTER ====================*/
 
-.slider {
+.slider{
     position: relative;
     overflow: hidden;
     border: 3px solid var(--title-color);
     width: 100%;
 }
 
-.slider img {
+.slider img{
     max-width: none;
     width: 100%;
     height: 100%;
@@ -589,7 +591,7 @@ input {
     object-fit: cover;
 }
 
-.before {
+.before{
     position: absolute;
     left: 0;
     top: 0;
@@ -599,7 +601,7 @@ input {
     height: 100%;
 }
 
-.change {
+.change{
     position: absolute;
     left: 20%;
     top: 0;
@@ -609,7 +611,7 @@ input {
     background-color: var(--title-color);
 }
 
-.change::after {
+.change::after{
     content: '';
     position: absolute;
     left: 50%;
@@ -649,60 +651,60 @@ input {
 }
 
 /*=============== VIDEO ===============*/
-.video__container {
+.video__container{
     padding-bottom: 1rem;
 }
 
-.video__description {
+.video__description{
     text-align: center;
     margin-bottom: var(--mb-2-5);
 }
 
-.video__content {
+.video__content{
     position: relative;
 }
 
-.video__button {
+.video__button{
     position: absolute;
     right: 1rem;
     bottom: -1rem;
     padding: 1rem 1.5rem;
 }
 
-.video__button-icon {
+.video__button-icon{
     font-size: 1.2rem;
 }
 
 /*=============== priceS ===============*/
 .price__card,
-.price__img {
+.price__img{
     height: 230px;
 }
 
-.price__container {
+.price__container{
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
 }
 
-.price__card {
+.price__card{
     position: relative;
     overflow: var(--img-hidden);
 }
 
-.price__card:hover .price__img {
+.price__card:hover .price__img{
     transform: var(--img-scale);
 }
 
-.price__img {
+.price__img{
     transition: var(--img-transition);
 }
 
 .price__content,
-.price__title {
+.price__title{
     color: #fff;
 }
 
-.price__content {
+.price__content{
     position: absolute;
     top: 0;
     left: 0;
@@ -714,18 +716,18 @@ input {
     padding: .75rem .75rem 0 1rem;
 }
 
-.price__rating {
+.price__rating{
     align-self: flex-end;
     display: flex;
     align-items: center;
 }
 
-.price__rating-icon {
+.price__rating-icon{
     font-size: .75rem;
     margin-right: var(--mb-0-25);
 }
 
-.price__rating-number {
+.price__rating-number{
     font-size: var(--small-font-size);
 }
 
@@ -739,16 +741,16 @@ input {
     border-radius: 0 5px 0 0 ;
 }
 
-.price__price {
+.price__price{
     display: block;
 }
 
-.price__title {
+.price__title{
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-25);
 }
 
-.price__button {
+.price__button{
     position: absolute;
     right: 0;
     bottom: 0;
@@ -757,7 +759,7 @@ input {
 
 
 /*========== SCROLL UP ==========*/
-.scrollup {
+.scrollup{
     position: fixed;
     right: 1rem;
     bottom: -20%;
@@ -776,15 +778,117 @@ input {
     opacity: 1;
 }
 
-.scrollup__icon {
+.scrollup__icon{
     color: var(--white-color);
     font-size: 1.2rem;
 }
 
-.scrollup:hover .scrollup__icon {
+.scrollup:hover .scrollup__icon{
     color: #f890b9;
 }
 
+
+
+/*=============== CONTACT ===============*/
+.contact__info{
+    margin-bottom: var(--mb-1-25);
+}
+
+.contacts{
+    background: var(--bckgr2);
+    margin: 0 -20px;
+    padding: 20px;
+}
+
+.contacts__title{
+    font-size: var(--h2-font-size);
+    color: var(--text-color-light);
+    margin-bottom: var(--mb-1-25);
+}
+
+.location,
+.email,
+.tel-number{
+    display: flex;
+    gap: 15px;
+    color: var(--text-color-light);
+    margin-bottom: var(--mb-0-75);
+}
+
+.info li:last-child{
+    margin-bottom: var(--mb-1-25);
+}
+
+.social__item{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1-25);
+    transition: .3s;
+}
+
+.social__item:hover{
+    color: var(--white-color);
+}
+
+.contact__title{
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-1-25);
+}
+
+.form__box{
+    display: flex;
+    flex-direction: column;
+}
+
+.input__box{
+    margin-bottom: var(--mb-1);
+}
+
+.input__area{
+    width: 100%;
+    position: relative;
+    padding: var(--mb-0-5);
+    color: var(--title-color);
+    background: hsla(206, 29%, 48%, 0.05);
+    border-radius: 0 10px 0 5px;
+    border-bottom: 1px solid hsl(206, 29%, 48%);
+}
+
+.input__box textarea{
+    background: hsla(206, 29%, 48%, 0.05);
+    color: var(--title-color);
+    padding: var(--mb-0-5);
+    border-radius: 0 10px 0 5px;
+    width: 100% !important;
+    min-height: 80px;
+    height: 100px;
+    max-height: 150px;
+    resize: vertical;
+    outline: none;
+    font: inherit;
+}
+
+.input__box textarea{
+    border-color: var(--body-color);
+}
+.input__area:focus,
+.input__box textarea:focus{
+    border-color: #4fe2ff;
+}
+
+.input__box textarea::-webkit-resizer{
+    display: none;
+}
+
+.input__area:focus:invalid,
+.input__box textarea:focus:invalid{
+    border-color: #f890b9;
+}
+
+.form__button{
+    padding: .5rem 1rem;
+}
 
 
 /*=============== FOOTER ===============*/
@@ -792,50 +896,41 @@ input {
     background-color: var(--first-color);
     overflow-x: hidden;
 }
-.footer__container {
+.footer__container{
     row-gap: 5rem;
 }
 
-.footer__content {
+.footer__content{
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     row-gap: 2rem;
 }
 
 .footer__title,
-.footer__subtitle {
+.footer__subtitle{
     font-size: var(--h3-font-size);
 }
 
-.footer__title {
+.footer__title{
     margin-bottom: var(--mb-0-5);
 }
 
-.footer__description {
+.footer__description{
     margin-bottom: var(--mb-2);
 }
 
-.footer__social {
-    font-size: 1.25rem;
-    color: var(--title-color);
-    margin-right: var(--mb-1-25);
-}
-.footer__social:hover{
-    color: var(--white-color);
-}
-
-.footer__subtitle {
+.footer__subtitle{
     margin-bottom: var(--mb-1);
 }
 
-.footer__item {
+.footer__item{
     margin-bottom: var(--mb-0-75);
 }
 
-.footer__link {
+.footer__link{
     color: var(--text-color);
 }
 
-.footer__link:hover {
+.footer__link:hover{
     color: #FFF;
 }
 
@@ -845,21 +940,21 @@ input {
 ----------------------------------------------------------------------------_____-------------------------------------- */
 
 /* Show scroll */
-.show-scroll {
+.show-scroll{
     bottom: 5rem;
 }
 
 /*=============== SCROLL BAR ===============*/
-::-webkit-scrollbar {
+::-webkit-scrollbar{
     width: .60rem;
     background-color: var(--scroll-bar-color);
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb{
     background-color: var(--scroll-thumb-color);
 }
 
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover{
     background-color: var(--scroll-bar-cover-color);
 }
 
@@ -1124,3 +1219,16 @@ input {
         height: 640px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+  

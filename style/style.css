@@ -815,7 +815,7 @@ input{
     margin-bottom: var(--mb-0-75);
 }
 
-.info li:last-child{
+.info li{
     margin-bottom: var(--mb-1-25);
 }
 
@@ -999,7 +999,44 @@ input{
     .price__container{
         grid-template-columns: repeat(3, max-content);
     }
+
+    .contact__container{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .contact__info{
+        position: relative;
+        margin-right: 30px;
+        margin-bottom: 0;
+        height: 100%;
+    }
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 -20px;
+        padding: 20px;
+        height: 100%;
+        border-radius: 0 20px 20px 0;
+    }
+    .location,
+    .email,
+    .tel-number{
+        gap: 20px;
+    }
+    .info li{
+        margin-bottom: 30px;
+    }
+    .contact__title{
+        text-align: center;
+    }
+    .input__box:last-child{
+        margin: 0 auto;
+    }
+
 }
+
 @media screen and (min-width: 767px){
     body{
         margin: 0;
@@ -1200,6 +1237,16 @@ input{
     .footer__content {
         justify-items: center;
     }
+
+    .contact{
+        padding-bottom: 7rem;
+    }
+
+    .contacts{
+        border-radius: 20px;
+    }
+
+
 }
 
 @media screen and (min-width: 1200px){

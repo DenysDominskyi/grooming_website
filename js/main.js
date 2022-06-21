@@ -40,6 +40,7 @@ window.addEventListener('scroll', scrollHeader)
 
 
 /*==================== VIDEO ====================*/
+/*
 const videoFile = document.getElementById('video-file'),
     videoButton = document.getElementById('video-button'),
     videoIcon = document.getElementById('video-icon')
@@ -71,6 +72,7 @@ function finalVideo() {
 }
 // ended, whe the video ends
 videoFile.addEventListener('ended', finalVideo)
+*/
 
 /*==================== SHOW SCROLL UP ====================*/ 
 function scrollUp(){

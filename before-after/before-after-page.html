@@ -9,9 +9,9 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
               
         <!--=============== STYLE ===============-->
-        <link rel="stylesheet" href="/style/style.css">
+        <link rel="stylesheet" href="/style/New folder/swiper-bundle.min.css">
         <link rel="stylesheet" href="/style/before-after-style.css">
-        <link rel="stylesheet" href="/carousel/carousel.css">
+        <link rel="stylesheet" href="/style/style.css">
 
     <title>VikGrooming</title>
 </head>
@@ -26,42 +26,30 @@
     <section class="experience section">
         <h2 class="section__title">Some of my <br>happy clients</h2>
 
-        <div class="carousel">
-        
-            <div class="carousel__track-container">
-                <ul class="carousel__track">
-                    <li class="carousel__slide current-slide">
-                        <img class="carousel__image" src="/carousel/images/1.jpg" alt="">
-                    </li>
-                    <li class="carousel__slide">
-                        <img class="carousel__image" src="/carousel/images/2.jpg" alt="">
-                    </li>
-                    <li class="carousel__slide">
-                        <img class="carousel__image" src="/carousel/images/3.jpg" alt="">
-                    </li>
-                    <li class="carousel__slide">
-                        <img class="carousel__image" src="/carousel/images/4.jpg" alt="">
-                    </li>
-                </ul>
-            </div>
-        
-            <div class="bottom__nav">
-                <button class="carousel__button carousel__button--left is-hidden">
-                    <img src="/carousel/images/bx-chevron-left.svg" alt="">
-                </button>
-        
-                <div class="carousel__nav">
-                    <button class="carousel__indicator current-slide"></button>
-                    <button class="carousel__indicator"></button>
-                    <button class="carousel__indicator"></button>
-                    <button class="carousel__indicator"></button>
+
+
+        <!-- Swiper -->
+        <div class="swiper-size swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/images/before-after-img/images/1.jpg" alt="">
                 </div>
-        
-                <button class="carousel__button carousel__button--right">
-                    <img src="/carousel/images/bx-chevron-right.svg" alt="">
-                </button>
+                <div class="swiper-slide">
+                    <img src="/images/before-after-img/images/2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/images/before-after-img/images/3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/images/before-after-img/images/4.jpg" alt="">
+                </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
+
+
+
+
     
         <div class="experience__container container grid">
     
@@ -76,9 +64,11 @@
                     </div>
                     <div class="change"></div>
                 </div>
-                
-    
+            
             </div>
+
+            <h1>Doggo</h1>
+            <p>Lasrwefsdf sdfe sdf er df</p>
         </div>
 
         <div class="experience__container container grid">
@@ -95,8 +85,10 @@
                     <div class="change" id="change2"></div>
                 </div>
         
-        
             </div>
+
+            <h1>Efds</h1>
+            <p>Fasrwefsdf sdfe sdf er df</p>
         </div>
 
         <div class="experience__container container grid">
@@ -113,13 +105,30 @@
                     <div class="change" id="change3"></div>
                 </div>
         
-        
             </div>
+
+            <h1>Flknds</h1>
+            <p>Lasrwefsdf sdfe sdf er df</p>
         </div>
     </section>
 
+    
+    <!--==================== SWIPER JS ====================-->
+    - Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
+    
     <!--==================== MAIN JS ====================-->
-    <script src="/carousel/carousel.js"></script>
+    
     <script src="/js/before_after-slider.js"></script>
 </body>
 </html>

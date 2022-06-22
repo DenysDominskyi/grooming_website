@@ -24,3 +24,29 @@ body{
 .change{
     cursor: pointer;
 }
+
+.swiper-size{
+    width: 50%;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    padding-bottom: 10%;
+}
+
+.swiper-slide img{
+    height: auto;
+    width: auto;
+}
+
+.swiper-pagination{
+    bottom: 15% !important;
+}
+
+@media screen and (max-width: 767px){
+    .swiper-size{
+        width: 80%;
+    }
+}

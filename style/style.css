@@ -899,7 +899,7 @@ input{
 .footer{
     background-color: var(--first-color);
     overflow-x: hidden;
-    padding-top: 2rem;
+    padding-top: 4rem !important;
 }
 .footer__container{
     row-gap: 5rem;

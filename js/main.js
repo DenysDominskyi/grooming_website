@@ -1,3 +1,17 @@
+
+// Initialize Swiper
+        var swiper = new Swiper(".discover__container", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            spaceBetween: 32,
+            coverflowEffect: {
+                rotate: 0,
+            },
+        });
+
 /* =================== SHOW MENU =================== */
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
@@ -114,21 +128,20 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data, .home__social-link, .home__info,
            .discover__container,
            .experience__data, .experience__overlay,
-           .price__card,
-           .footer__data`,{
+           .price__card`,{
     origin: 'top',
     interval: 100,
 })
 
 sr.reveal(`.about__data, 
-           .video__description,
-           .work__container`, {
+           .work__container,
+           .contacts`, {
     origin: 'left',
 })
 
 sr.reveal(`.about__img-overlay, 
-           .video__content,
-           .home__img`, {
+           .home__img,
+           .contact__form`, {
     origin: 'right',
     interval: 100,
 })

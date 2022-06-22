@@ -11,6 +11,7 @@
         <!--=============== STYLE ===============-->
         <link rel="stylesheet" href="/style/style.css">
         <link rel="stylesheet" href="/style/before-after-style.css">
+        <link rel="stylesheet" href="/carousel/carousel.css">
 
     <title>VikGrooming</title>
 </head>
@@ -24,6 +25,43 @@
     <!--==================== WORKS ====================-->
     <section class="experience section">
         <h2 class="section__title">Some of my <br>happy clients</h2>
+
+        <div class="carousel">
+        
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide">
+                        <img class="carousel__image" src="/carousel/images/1.jpg" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="/carousel/images/2.jpg" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="/carousel/images/3.jpg" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="/carousel/images/4.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="bottom__nav">
+                <button class="carousel__button carousel__button--left is-hidden">
+                    <img src="/carousel/images/bx-chevron-left.svg" alt="">
+                </button>
+        
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                </div>
+        
+                <button class="carousel__button carousel__button--right">
+                    <img src="/carousel/images/bx-chevron-right.svg" alt="">
+                </button>
+            </div>
+        </div>
     
         <div class="experience__container container grid">
     
@@ -83,5 +121,6 @@
     <!--==================== MAIN JS ====================-->
     <!-- <script src="/js/main.js"></script> -->
     <script src="/js/before_after-slider.js"></script>
+    <script src="/carousel/carousel.js"></script>
 </body>
 </html>
